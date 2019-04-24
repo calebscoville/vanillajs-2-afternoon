@@ -64,6 +64,12 @@ let drawId;
 function getRandomNumber(min, max) {
     return Math.round(Math.random() * (max - min + 1)) + min;
 };
+
+window.addEventListener('mousemove', function(mouseMoveEvent) {
+  mousePosition.x = mouseMoveEvent.pageX;
+  mousePosition.y = mouseMoveEvent.pageY;
+});
+
 </script>
 
 </html>
